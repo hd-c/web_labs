@@ -299,3 +299,41 @@ function sumArray(array $arr): int
 }
 echo sumArray([4, 5, 5, 7]);
 //endregion
+
+//region task11: Loops
+function buildPyramid(int $size): string
+{
+	$str = '';
+	for ($i = 0; $i < $size; $i++)
+	{
+		$str .= str_repeat("x", $i + 1) . "\n";
+	}
+	return $str;
+}
+echo buildPyramid(20);
+//endregion
+
+//region task12: Func combinations
+$arr7 = [3, 5, 7, 8, 9, 1];
+echo array_sum($arr7)/sizeof($arr7) . "\n";
+
+function recursiveSumNum(int $quantity): int
+{
+	if($quantity == 1)
+	{
+		return $quantity;
+	}
+	return $quantity + recursiveSumNum($quantity - 1);
+}
+echo recursiveSumNum(100) . "\n";
+
+print_r(array_map('sqrt', $arr7));
+
+$keys = range('a', 'z');
+$values = range(1, 26);
+print_r(array_combine($keys, $values));
+
+$str = '1234567890';
+$arr8 = str_split($str, 2);
+echo array_sum($arr8);
+//endregion

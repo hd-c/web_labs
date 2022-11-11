@@ -5,3 +5,17 @@ $order = $very_bad_unclear_name;
 $order .= "and a cup of milk for my cat";
 echo $very_bad_unclear_name . "\n";
 // endregion
+
+//region task2: Numbers
+$digit = 5;
+echo $digit . "\n";
+
+$float_digit = 273.5;
+echo "float digit = " . $float_digit . "\n";
+
+echo 12 . "\n";
+
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo "the difference in spending money = " . ($last_month - $this_month) . "\n";
+// endregion

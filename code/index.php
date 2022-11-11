@@ -27,3 +27,7 @@ $days = $months * 16;
 $days_per_language = $days / $num_languages;
 echo $days_per_language . "\n";
 // endregion
+
+//region task4: Power of number
+echo 8**2;
+// endregion

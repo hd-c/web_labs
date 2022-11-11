@@ -31,3 +31,14 @@ echo $days_per_language . "\n";
 //region task4: Power of number
 echo 8**2;
 // endregion
+
+//region task5: Assignment statement
+$my_num = 10;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+// endregion

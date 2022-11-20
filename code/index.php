@@ -12,3 +12,4 @@ $pattern = "/(\d)+/";
 $subject = "a1b2c3";
 echo preg_replace_callback($pattern, fn($matches) => intval($matches[0]) ** 2, $subject);
 //endregion
+
